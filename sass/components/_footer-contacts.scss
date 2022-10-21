@@ -1,0 +1,28 @@
+.page-footer__contacts {
+  margin-top: 20px;
+}
+
+%font-footer-contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.page-footer__contact {
+  @extend %font-footer-contact;
+  color: $footer-contact;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+  .page-footer__address:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  @extend %font-footer-contact;
+  color: $hero-headline-color;
+}
+

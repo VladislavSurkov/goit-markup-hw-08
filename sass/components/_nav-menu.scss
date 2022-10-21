@@ -1,0 +1,59 @@
+.menu-nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+  margin-left: 88px;
+  display: flex;
+  }
+  @media screen and (min-width: 1200px){
+    margin-left: 93px;
+  }
+}
+
+.menu-nav__item {
+  padding: 32px 0;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.menu-nav__link {
+  position: relative;
+  font-weight: $font-wh-medium;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  color: $title-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
+    color: $accent-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: flex;
+
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: transparent;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &--current::after,
+  &:hover::after,
+  &:focus::after {
+    background-color: $accent-team-background-color;
+  }
+}

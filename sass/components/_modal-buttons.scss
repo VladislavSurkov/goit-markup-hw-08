@@ -1,0 +1,56 @@
+// ----------close---------
+.button-close {
+  display: flex;
+  
+@media screen and (max-width:479px){
+  margin-left: auto;
+}
+@media screen and (min-width:480px){
+  position: absolute;
+  right: 8px;
+  top: 8px;
+} 
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  background-color: $team-item-background;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.button-close__icon {
+  width: 11px;
+  height: 11px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .button-close:hover &,
+  .button-close:focus & {
+    fill: $accent-color;
+  }
+}
+//  ---------send---------
+.modal__button-send {
+  
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  padding: 10px 52px;
+  color: $hero-headline-color;
+  background-color: $accent-team-background-color;
+  box-shadow: $shadow-btn;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.15);
+  }
+}

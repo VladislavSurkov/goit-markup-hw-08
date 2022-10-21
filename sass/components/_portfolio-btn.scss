@@ -1,0 +1,18 @@
+.portfolio-filtres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  @media screen and (max-width: 767px){
+    max-width: 326px;
+  }
+  @media screen and (min-width: 768px){
+    justify-content: center;
+  }
+}
+.portfolio-filtres__button {
+  font-weight: $font-wh-medium;
+  font-size: 16px;
+  min-width: 73px;
+  padding: 6px 22px;
+  line-height: 1.6;
+}

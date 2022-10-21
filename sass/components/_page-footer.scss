@@ -1,0 +1,39 @@
+.page-footer {
+  background-color: $content-background-color;
+  padding: 60px 0;
+
+  &__box {
+    align-items: baseline;
+    @media screen and (max-width: 1199px){
+    text-align: center;
+    }
+    @media screen and (min-width: 1200px){
+    display: flex;
+    }
+  }
+  @media screen  and (min-width: 768px){
+    &__tablet{
+      display: flex;
+      justify-content: space-around ;
+    }
+  }
+
+  &__address-box {
+    @media screen and (max-width: 1199px){
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+    margin-right: 70px;
+    }
+  }
+}
+.footer__title {
+  font-weight: $font-wh-bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  color: $hero-headline-color;
+  }

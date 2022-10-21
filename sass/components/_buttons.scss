@@ -1,0 +1,39 @@
+.button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+}
+
+// --------------primary---------
+.button--primary {
+  background-color: $accent-color;
+  color: $hero-headline-color;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $title-text-color;
+    background-color: $team-background-color;
+  }
+}
+
+// ------------secondary----------
+.button--secondary {
+  background-color: $team-background-color;
+  color: $title-text-color;
+  transition-property: background-color, color, padding;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $hero-headline-color;
+    padding: 6px 25px;
+  }
+}
+
+.container-button{
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+.section__block-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  margin-bottom: 30px;
+  background-color: $second-section-background-color;
+  border-radius: 4px;
+}
+.section__item{
+  @media screen and (max-width: 767px){
+    width: 100%;
+    &:not(:last-child){
+    margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px){
+    width: 270px;
+  }
+}
+
+.section__icon {
+  width: 70px;
+  height: 70px;
+}
+.section__title {
+  font-weight: $font-wh-bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0 0 10px;
+  color: $title-text-color;
+  @media screen and (max-width: 767px){
+    text-align: center;
+  }
+}
+.section__text {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  
+}
